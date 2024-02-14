@@ -1,0 +1,15 @@
+{
+  "authors": [
+    {
+      "name": "Laurent LECLERCQ",
+      "email": "laurent@codeam.Fr",
+      "homepage": "https://www.codeam.fr",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "platform": {
+      "php": "7.4"
+    }
+  }
+}
