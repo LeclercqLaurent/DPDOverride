@@ -62,8 +62,8 @@ class AdminDPDFranceControllerOverride extends AdminDPDFranceController
                                 if (Validate::isLoadedObject($order = new Order($id_order))) {
                                     $history = new OrderHistory();
                                     $history->id_order = (int)$id_order;
-                                    $history->id_order_state = DPDConfig::get('DPDFRANCE_ETAPE_EXPEDIEE', null, null, (int)$order->id_shop;
-                                    $history->changeIdOrderState(DPDConfig::get('DPDFRANCE_ETAPE_EXPEDIEE', null, null, (int)$order->id_shop, $id_order);
+                                    $history->id_order_state = DPDConfig::get('DPDFRANCE_ETAPE_EXPEDIEE', null, null, (int)$order->id_shop);
+                                    $history->changeIdOrderState(DPDConfig::get('DPDFRANCE_ETAPE_EXPEDIEE', null, null, (int)$order->id_shop), $id_order);
                                     $history->id_employee = Context::getContext()->employee->id;
                                     $history->addWithemail();
                                 }
